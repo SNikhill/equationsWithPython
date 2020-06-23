@@ -8,4 +8,5 @@ Using Python, PyPlot to plot the graphs.
 
 - Trajectory of a Projectile
 - Energy Variation (Ideal Spring)
-  **Made By:** [S Nikhill](https://github.com/SNikhill)
+
+**Made By:** [S Nikhill](https://github.com/SNikhill)
