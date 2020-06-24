@@ -4,6 +4,8 @@ This repository is meant to host files to have fun with: Graphs, Physics, Mathem
 
 Using Python, PyPlot to plot the graphs.
 
+**Run on Repl**: [Repl Link](https://repl.it/@NikSeth/equationsWithPython)
+
 ## Contents
 
 - Trajectory of a Projectile
@@ -11,3 +13,4 @@ Using Python, PyPlot to plot the graphs.
 - Electric Field Variation (Insulated Sphere)
 
 **Made By:** [S Nikhill](https://github.com/SNikhill)
+**Repository Link:** [SNikhill/equationsWithPython](https://github.com/SNikhill/equationsWithPython)
