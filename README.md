@@ -8,5 +8,6 @@ Using Python, PyPlot to plot the graphs.
 
 - Trajectory of a Projectile
 - Energy Variation (Ideal Spring)
+- Electric Field Variation (Insulated Sphere)
 
 **Made By:** [S Nikhill](https://github.com/SNikhill)
