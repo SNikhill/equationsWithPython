@@ -56,15 +56,15 @@ class projectile:
         # For Details
 
         plt.scatter(
-            0, 0, color="orange", label=f"Range: {round(self.range)} m",
+            0, 0, color="orange", label=f"Range: {round(self.range)} m"
         )
 
         plt.scatter(
-            0, 0, color="orange", label=f"Max Height: {self.maxHeight} m",
+            0, 0, color="orange", label=f"Max Height: {self.maxHeight} m"
         )
 
         plt.scatter(
-            0, 0, color="orange", label=f"Time Of Flight: {self.timeOfFlight} s",
+            0, 0, color="orange", label=f"Time Of Flight: {self.timeOfFlight} s"
         )
 
         # For Trajectory
@@ -73,7 +73,7 @@ class projectile:
             horizontalDisplacement,
             verticalDisplacement,
             color="orange",
-            label=f"Trajectory",
+            label=f"Trajectory"
         )
 
         plt.xlabel("Horizontal Displacement")

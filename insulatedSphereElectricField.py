@@ -38,13 +38,13 @@ class insulatedSphere:
             positions,
             electricFieldValue,
             color="#ffb836",
-            label="Variation of Electric Field",
+            label="Variation of Electric Field"
         )
         plt.scatter(
             self.testChargePosition,
             self.electricField(self.testChargePosition),
             color="Orange",
-            label=f"At Test Position: {round(self.electricField(self.testChargePosition), 2)} N/C",
+            label=f"At Test Position: {round(self.electricField(self.testChargePosition), 2)} N/C"
         )
         plt.legend()
         plt.show()
@@ -54,6 +54,6 @@ print("\n\n\n\n USE SI UNITS ONLY. (Metre, Newton, Coulomb) \n\n\n\n")
 sphere1 = insulatedSphere(
     float(input("Enter: Net Charge on Sphere =>")),
     float(input("Enter: Radius of the Sphere =>")),
-    float(input("Enter: Distance of Test Charge from the Centre =>")),
+    float(input("Enter: Distance of Test Charge from the Centre =>"))
 )
 sphere1.plot(float(input("Enter: Displacement Interval =>")))

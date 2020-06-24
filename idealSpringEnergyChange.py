@@ -38,7 +38,8 @@ class spring:
         mechanicalEnergyValue = []
         positions = []
         while currentPosition >= negativeLimit and currentPosition <= positiveLimit:
-            potentialEnergyValue.append(self.potentialEnergyChange(currentPosition))
+            potentialEnergyValue.append(
+                self.potentialEnergyChange(currentPosition))
             kineticEnergyValue.append(self.kineticEnergy(currentPosition))
             mechanicalEnergyValue.append(self.mechanicalEnergy)
             positions.append(currentPosition)
@@ -49,9 +50,10 @@ class spring:
             positions,
             mechanicalEnergyValue,
             color="black",
-            label=f"Total Mechanical Energy ({self.mechanicalEnergy} J)",
+            label=f"Total Mechanical Energy ({self.mechanicalEnergy} J)"
         )
-        plt.plot(positions, kineticEnergyValue, color="red", label="Kinetic Energy")
+        plt.plot(positions, kineticEnergyValue,
+                 color="red", label="Kinetic Energy")
         plt.plot(
             positions, potentialEnergyValue, color="green", label="Potential Energy"
         )
@@ -61,7 +63,7 @@ class spring:
 
 print("\n\n\n\n USE SI UNITS ONLY. (Metre, Newton, Second) \n\n\n\n")
 s1 = spring(
-    float(input("Enter: Spring Constant =>")), float(input("Enter: Displaced By =>"))
+    float(input("Enter: Spring Constant =>")), float(
+        input("Enter: Displaced By =>"))
 )
 s1.plot(float(input("Enter: Displacement Interval =>")))
-
