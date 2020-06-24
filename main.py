@@ -26,7 +26,8 @@ def executeFile():
     pyFilesDict = filterPy(allFiles)
     displayFiles(pyFilesDict)
     keyPressed = int(input("Enter your selection => ").strip())
-    os.system(f"python3 {pyFilesDict[keyPressed]}")
+    __import__(pyFilesDict[keyPressed])
+    exec(pyFilesDict[keyPressed])
 
 
 executeFile()
