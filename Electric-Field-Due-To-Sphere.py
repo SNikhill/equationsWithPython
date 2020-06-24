@@ -50,7 +50,7 @@ class insulatedSphere:
         plt.show()
 
 
-print("\n\n\n\n USE SI UNITS ONLY. (Metre, Newton, Coulomb) \n\n\n\n")
+print("\n\n\n\n \033[1m Electric Field Due To Sphere.\033[0m\n\nUSE SI UNITS ONLY. (Metre, Newton, Coulomb) \n\n\n\n")
 sphere1 = insulatedSphere(
     float(input("Enter: Net Charge on Sphere =>")),
     float(input("Enter: Radius of the Sphere =>")),

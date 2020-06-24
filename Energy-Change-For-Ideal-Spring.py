@@ -61,7 +61,7 @@ class spring:
         plt.show()
 
 
-print("\n\n\n\n USE SI UNITS ONLY. (Metre, Newton, Second) \n\n\n\n")
+print("\n\n\n\n \033[1m Energy Change For Ideal Spring.\033[0m\n\nUSE SI UNITS ONLY. (Metre, Newton, Second) \n\n\n\n")
 s1 = spring(
     float(input("Enter: Spring Constant =>")), float(
         input("Enter: Displaced By =>"))
