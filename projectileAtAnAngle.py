@@ -82,6 +82,7 @@ class projectile:
         plt.show()
 
 
+print("\n\n\n\n USE SI UNITS ONLY. (Metre, Newton, Second, Metre/Second) \n\n\n\n")
 p1 = projectile(
     float(input("Enter: Initial Velocity (m/s)=> ")),
     float(input("Enter: Angle Of Projection (degree measure)=> ")),
