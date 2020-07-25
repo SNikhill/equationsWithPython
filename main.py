@@ -23,6 +23,7 @@ def displayFiles(filesDict):
 
 
 def executeFile():
+    print("\033[2J\033[0;0H\033[1m Equations with Python.\033[0m")
     pyFilesDict = filterPy(allFiles)
     displayFiles(pyFilesDict)
     keyPressed = int(input("Enter your selection => ").strip())
