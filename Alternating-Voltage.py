@@ -3,14 +3,15 @@ import math
 
 
 class voltageGraph:
-    def __init__(self, frequency, peakVolatge):
-        self.frequency = frequency
+    def __init__(self, timePeriod, peakVolatge):
+        self.timePeriod = timePeriod
         self.peakVolatge = peakVolatge
+        self.angularFrequency = (2 * math.pi) / self.timePeriod
 
     def voltage(self, atTime):
-        return self.peakVolatge * math.sin(((2 * math.pi) / (self.frequency)) * atTime)
+        return self.peakVolatge * math.sin(self.angularFrequency * atTime)
 
-    def plot(self, timeStep, limit):
+    def plot(self, limit, timeStep):
         currentTime = 0
         tillTime = limit
         print(
@@ -24,7 +25,7 @@ class voltageGraph:
             currentTime += timeStep
 
         plt.plot(
-            timeValues, voltageValues, color="Orange", label="Variation of Voltage"
+            timeValues, voltageValues, color="orange", label="Alternating Voltage (V)"
         )
 
         plt.plot(timeValues, [0] * len(timeValues), color="black", label="Time (s)")
@@ -38,9 +39,9 @@ print(
     "\n\n\n\n \033[1m Alternating Voltage.\033[0m\n\nUSE SI UNITS ONLY. (Metre, Newton, Second, Hertz, Volts) \n\n\n\n"
 )
 v1 = voltageGraph(
-    float(input("Enter: Frequency (Hz) => ")),
+    float(input("Enter: Time Period (s) => ")),
     float(input("Enter: Peak Volatge (V)=> ")),
 )
 
-v1.plot(float(input("Enter: Time Step => ")), float(input("Enter: Time Limit (s)=> ")))
+v1.plot(float(input("Enter: Time Limit (s)=> ")), float(input("Enter: Time Step => ")))
 
