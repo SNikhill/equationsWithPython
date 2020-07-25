@@ -11,6 +11,7 @@ Using Python, PyPlot to plot the graphs.
 - Trajectory of a Projectile
 - Energy Variation (Ideal Spring)
 - Electric Field Variation (Insulated Sphere)
+- Alternating Voltage (Sinusoidal Wave)
 
 **Made By:** [S Nikhill](https://github.com/SNikhill)
 **Repository Link:** [SNikhill/equationsWithPython](https://github.com/SNikhill/equationsWithPython)
