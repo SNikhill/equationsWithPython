@@ -24,7 +24,7 @@ class voltageGraph:
         print(f"\n \033[1m Recommended Time Limit: \033[0m {self.recommendedTimeLimit}")
         self.timeLimit = float(input("Enter: Time Limit (s)=> "))
         print(
-            f"\n \033[1m Recommended Time Step \033[0m {round(self.timeLimit * 10**(-3), timeLimitPrecision + 3)}"
+            f"\n \033[1m Recommended Time Step \033[0m {round(self.recommendedTimeLimit * 10**(-3), timeLimitPrecision + 3)}"
         )
         self.timeStep = float(input("Enter: Time Step => "))
         self.plot()
