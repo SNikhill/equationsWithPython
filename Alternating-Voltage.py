@@ -9,9 +9,7 @@ class voltageGraph:
         self.angularFrequency = (2 * math.pi) * self.frequency
         self.recommendedTimeLimit = round(10 * (1 / self.frequency), 9)
         self.recommendedTimeStep = round(self.recommendedTimeLimit * (10 ** (-3)), 12)
-        print(
-            f"\n \033[1m Recommended Time Limit for a good graph\033[0m {self.recommendedTimeLimit}"
-        )
+        print(f"\n \033[1m Recommended Time Limit: \033[0m {self.recommendedTimeLimit}")
         self.timeLimit = float(input("Enter: Time Limit (s)=> "))
         print(f"\n \033[1m Recommended Time Step \033[0m {self.recommendedTimeStep}")
         self.timeStep = float(input("Enter: Time Step => "))
