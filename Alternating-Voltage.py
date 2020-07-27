@@ -7,12 +7,27 @@ class voltageGraph:
         self.frequency = frequency
         self.peakVolatge = peakVolatge
         self.angularFrequency = (2 * math.pi) * self.frequency
-        self.recommendedTimeLimit = round(10 * (1 / self.frequency), 3)
-        self.recommendedTimeStep = round(10 * (1 / self.frequency) * (10 ** (-3)), 5)
+
+    def startPlot(self):
+        timeLimitPrecision = 3
+        self.recommendedTimeLimit = round(10 * (1 / self.frequency), timeLimitPrecision)
+        while self.recommendedTimeLimit == 0 and timeLimitPrecision < 7:
+            self.recommendedTimeLimit = round(
+                10 * (1 / self.frequency), timeLimitPrecision
+            )
+            timeLimitPrecision += 1
+        if timeLimitPrecision >= 7:
+            print(
+                f"\n\n\n\n\n\nFrequency is too high. Restarting the Program \n\n\n\n\n\n"
+            )
+            return False
         print(f"\n \033[1m Recommended Time Limit: \033[0m {self.recommendedTimeLimit}")
         self.timeLimit = float(input("Enter: Time Limit (s)=> "))
-        print(f"\n \033[1m Recommended Time Step \033[0m {self.recommendedTimeStep}")
+        print(
+            f"\n \033[1m Recommended Time Step \033[0m {round(self.timeLimit * 10**(-3), timeLimitPrecision + 3)}"
+        )
         self.timeStep = float(input("Enter: Time Step => "))
+        self.plot()
 
     def voltage(self, atTime):
         return self.peakVolatge * math.sin(self.angularFrequency * atTime)
@@ -50,10 +65,16 @@ class voltageGraph:
 print(
     "\n\n\n\n \033[1m Alternating Voltage.\033[0m\n\nUSE SI UNITS ONLY. (Metre, Newton, Second, Hertz, Volts) \n\n\n\n"
 )
-v1 = voltageGraph(
-    float(input("Enter: Frequency (Hz) => ")),
-    float(input("Enter: Peak Voltage (V)=> ")),
-)
 
-v1.plot()
+
+def initiateObject():
+    v1 = voltageGraph(
+        float(input("Enter: Frequency (Hz) => ")),
+        float(input("Enter: Peak Voltage (V)=> ")),
+    )
+    if v1.startPlot() == False:
+        return initiateObject()
+
+
+initiateObject()
 
