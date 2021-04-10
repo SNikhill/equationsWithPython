@@ -1,17 +1,24 @@
-# READ ME
 
-This repository is meant to host files to have fun with: Graphs, Physics, Mathematics (Maybe some Chemistry too).
+[────────────╔╗──────────╔╗╔╗╔╗╔╗╔╗─╔═══╗───╔╗╔╗
+───────────╔╝╚╗─────────║║║║║╠╝╚╣║─║╔═╗║──╔╝╚╣║
+╔══╦══╦╗╔╦═╩╗╔╬╦══╦═╗╔══╣║║║║╠╗╔╣╚═╣╚═╝╠╗─╠╗╔╣╚═╦══╦═╗
+║║═╣╔╗║║║║╔╗║║╠╣╔╗║╔╗╣══╣╚╝╚╝╠╣║║╔╗║╔══╣║─║║║║╔╗║╔╗║╔╗╗
+║║═╣╚╝║╚╝║╔╗║╚╣║╚╝║║║╠══╠╗╔╗╔╣║╚╣║║║║──║╚═╝║╚╣║║║╚╝║║║║
+╚══╩═╗╠══╩╝╚╩═╩╩══╩╝╚╩══╝╚╝╚╝╚╩═╩╝╚╩╝──╚═╗╔╩═╩╝╚╩══╩╝╚╝
+─────║║────────────────────────────────╔═╝║
+─────╚╝────────────────────────────────╚══╝](https://repl.it/@NikSeth/equationsWithPython)
 
-Using Python, PyPlot to plot the graphs.
 
-**Run on Repl**: [Repl Link](https://repl.it/@NikSeth/equationsWithPython)
+[![Run on Repl.it](https://repl.it/badge/github/SNikhill/equationsWithPython)](https://repl.it/@NikSeth/equationsWithPython)
 
-## Contents
+**A Project By:** [Nikhil Seth](https://github.com/SNikhill/)
 
+**Guided By:** Dr. Jagdeep Jassal
+
+Bridging the **Beauty** of Mathematics, **Explanation** of Science and **Power** of a Computer to take on the ages old method of Plotting Equations on a Graph Paper and achieveing an accuracy higher than achievable by a man's brain.
+
+# Contents
 - Trajectory of a Projectile
 - Energy Variation (Ideal Spring)
 - Electric Field Variation (Insulated Sphere)
 - Alternating Voltage (Sinusoidal Wave)
-
-**Made By:** [S Nikhill](https://github.com/SNikhill)
-**Repository Link:** [SNikhill/equationsWithPython](https://github.com/SNikhill/equationsWithPython)
