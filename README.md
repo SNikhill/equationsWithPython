@@ -22,3 +22,9 @@ Bridging the **Beauty** of Mathematics, **Explanation** of Science and **Power**
 - Energy Variation (Ideal Spring)
 - Electric Field Variation (Insulated Sphere)
 - Alternating Voltage (Sinusoidal Wave)
+
+# License
+
+MIT License
+
+Read it [here](https://github.com/SNikhill/equationsWithPython/blob/master/LICENSE.md).
